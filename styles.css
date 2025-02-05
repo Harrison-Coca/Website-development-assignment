@@ -10,7 +10,6 @@ body {
     color: #333;
 }
 
-/* Header Styling */
 header {
     position: fixed;
     top: 0;
@@ -21,28 +20,27 @@ header {
 .first {
     background-color: rgb(228, 136, 167);
     color: white;
-    padding: 8px; /* Keeps it small */
+    padding: 8px; 
     text-align: center;
 }
 
 .second {
     background-color: rgb(167, 167, 230);
     color: white;
-    padding: 8px; /* Same size as .first */
+    padding: 8px; 
     text-align: center;
 }
 
-/* Navbar Styling */
 header nav ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;  /* Centers the menu */
-    padding: 5px; /* Reduced padding */
+    justify-content: center; 
+    padding: 5px; 
     background-color: rgb(167, 167, 230);
 }
 
 header nav ul li {
-    margin: 0 15px; /* Spacing between items */
+    margin: 0 15px; 
 }
 
 header nav ul li a {
@@ -52,22 +50,20 @@ header nav ul li a {
     transition: font-size 0.3s ease;
 }
 
-/* Responsive Navbar - Reduce Size on Small Screens */
 @media (max-width: 768px) {
     header nav ul {
-        padding: 5px; /* Reduce padding */
+        padding: 5px; 
     }
 
     header nav ul li {
-        margin: 0 10px; /* Reduce spacing */
+        margin: 0 10px; 
     }
 
     header nav ul li a {
-        font-size: 14px; /* Reduce text size */
+        font-size: 14px; 
     }
 }
 
-/* Footer Styling */
 footer {
     background-color: #364c62;
     color: white;
@@ -76,9 +72,23 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    font-size: 16px;
 }
 
-/* Section Styling */
+@media (max-width: 768px) {
+    footer {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 6px;
+        font-size: 12px;
+    }
+}
+
 section {
     padding: 20px;
     margin: 20px;
@@ -92,7 +102,6 @@ section img {
     border-radius: 10px;
 }
 
-/* Form Styling */
 form {
     background-color: #fff;
     padding: 20px;
